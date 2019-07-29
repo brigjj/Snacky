@@ -1,0 +1,248 @@
+
+<style type="text/css">
+	*{
+		padding: 0px;
+		margin: 0px;
+	}
+
+
+	body{
+	animation-name : animationb;
+	animation-duration: 7s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+	animation-play-state: running;
+	}
+
+	@-webkit-keyframes animationb {
+    0%     {background-color:#FB99A6;}
+    50.0%  {background-color:#FEC6CD;} 
+    100.0%  {background-color:#FB99A6;}
+	}
+
+	@keyframes animationb {
+   	0%     {background-color:#FB99A6;}
+    50.0%  {background-color:#FEC6CD;} 
+    100.0%  {background-color:#FB99A6;}
+	}
+	
+
+
+	h1{
+		text-align: center;
+		margin:5%;
+		font-family:times;
+		font-size: 40px;
+		color:#383838;
+	}
+
+	.images {
+		position: absolute;
+		top:35%;
+		left:7%;
+		padding: 0px;
+		display: flex;
+
+	}
+
+
+
+	@media (max-width: 375px){
+	.images {
+		top:10%;
+		width:57%;
+		flex-direction: column;
+		left: 27%;
+	}}
+
+
+	.cat-about , .girl-menu, .location-buddha, .contact-beer { /*image sizes*/
+		width: 75%;
+		height: auto;	
+		margin: 0;
+	}
+
+
+	.description1 {visibility:hidden;opacity:0;}
+
+
+	.box-1:hover .description1  {
+		position: absolute;
+		left:2%;
+		visibility:visible;
+		opacity:1;
+		font-size:70px;
+		color:red;
+	}
+
+
+
+	@media (max-width: 375px){
+	.box-1:hover .description1{
+		position: absolute;
+		visibility:visible;
+		left:-10%;
+		top:8%;
+		opacity:1;
+		font-size:40px;
+		color:red;
+	}
+	}
+
+
+
+	.description2 {visibility:hidden;opacity:0;}
+
+
+	.box-2:hover .description2 {
+		position: absolute;
+		bottom:100%;
+		left:30%;
+		visibility:visible;
+		opacity:1;
+		font-size: 70px;
+		color:red;
+	}
+
+
+	@media (max-width: 375px) {
+		.box-2:hover .description2{
+		position: absolute; 
+		left:55%;
+		top:35%;
+		opacity:1;
+		font-size:40px;
+		color:red;
+	}
+	}
+
+
+
+	.description3{visibility:hidden;opacity:0;}
+
+
+	.box-3:hover .description3 {
+		visibility:visible;
+		opacity:1;
+		font-size: 70px;
+		color:red;
+	}
+
+
+		@media (max-width: 375px) {
+		.box-3:hover .description3{
+		position: absolute; 
+		left:-30%;
+		top:60%;
+		opacity:1;
+		font-size:40px;
+		color:red;
+	}
+	}
+
+
+
+
+	.description4{visibility:hidden;opacity:0;}
+
+
+	.box-4:hover .description4 {
+		position: absolute;
+		bottom:100%;
+		left:75%;
+		visibility:visible;
+		opacity:1;
+		font-size: 70px;
+		color:red;
+	}
+
+
+
+	@media (max-width: 375px) {
+		.box-4:hover .description4 {
+		position: absolute; 
+		left:45%;
+		top:86%;
+		opacity:1;
+		font-size:40px;
+		color:red;
+	}
+	}
+
+
+	footer { 
+		position:fixed;
+		text-align: center;
+		top:95%;
+		left:45%;
+		font-size: 13px;
+	}
+
+
+	@media (max-width: 375px) {
+	footer {
+		position:fixed;
+		text-align: center;
+		top:97%;
+		left:33%;
+		font-size: 13px;
+	}
+ 	}
+
+
+</style>
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Snacky Restaurant Williamsburg</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+
+
+<body>
+
+<h1>Snacky</h1>
+
+
+<div class="images">
+
+<div class="box-1">
+<a href="about.html"><img class="cat-about" src="img/snackycat.png"  alt="cat"></a>
+<p class="description1"> about </p>
+</div>
+
+<div class="box-2">
+<a href="menu.html"><img class="girl-menu" src="img/snackygirl.png" alt="girl"></a>
+<p class="description2"> menu </p>
+</div>
+
+<div class="box-3">
+<a href="location.html"><img class="location-buddha" src="img/snackybuddha.png" alt="buddha"></a>
+<p class="description3"> location </p>
+</div>
+
+<div class="box-4">
+<a href="contact.html"><img class="contact-beer"  src="img/snackybeer.png" alt="beer"></a>
+<p class="description4"> contact </p>
+</div>
+
+</div>
+
+
+
+<footer> © 2019 SNACKY NYC </footer>
+
+
+
+
+</body>
+</html>
