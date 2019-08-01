@@ -1,0 +1,136 @@
+<style type="text/css">
+	
+
+		body{
+		animation-name : animationb;
+		animation-duration: 7s;
+		animation-timing-function: ease-in-out;
+		animation-iteration-count: infinite;
+		animation-play-state: running;
+		}
+
+		@-webkit-keyframes animationb {
+	    0%     {background-color:#FB99A6;}
+	    50.0%  {background-color:#FEC6CD;} 
+	    100.0%  {background-color:#FB99A6;}
+		}
+
+		@keyframes animationb {
+	   	0%     {background-color:#FEC6CD;}
+	    50.0%  {background-color:#FB99A6;} 
+	    100.0%  {background-color:#FEC6CD;}
+		}
+
+
+		p{
+			font-size:1.5em;
+		}
+
+		input{
+			width: 53%;
+			height: 40px;
+		}
+
+		.home{
+			width:15%;
+			height:auto;
+			position: relative;
+			left:43%;
+		}
+
+		form {
+			position: absolute;
+			width:65%;
+			left:30%;
+			top:35%;
+			color:red;
+		}
+
+		.send{
+			width:10%;
+
+		}
+
+
+		.send:active{
+			background-color:red;
+
+		}
+
+
+		.reset{
+			width:10%;
+		}
+
+
+		.reset:active{
+			background-color:red;
+		}
+
+
+	input[type=button], input[type=submit], input[type=reset] {
+		  background-color:#ffffff ;
+		  border: 1px solid #A9A9A9;
+		  font-size: 70%;
+		  color:#696969;
+		  margin: 4px 2px;
+		  cursor: pointer;
+		}
+
+
+
+	@media (min-width: 1440px){
+		textarea {
+			width: 60%;
+		}
+		}
+
+
+
+	@media (min-width: 1920px){
+		textarea {
+			width: 58%;
+		}
+		}
+
+		
+
+
+
+</style>
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Snacky Contact</title>
+</head>
+
+
+
+<body>
+
+ <a href="index.html"><img class="home" src="img/snackybeer.png"></a>
+
+
+    <form action="mailto:contactbrigittebb@gmail.com" method="post" enctype="text/plain">
+      <p>Name  <input type="text" name="name"/></p>
+      <p>Email  <input type="text" name="email"/></p>
+      <p>Message
+        <br>
+        <textarea name="comments" rows = "12" cols = "80"placeholder="write something to us"></textarea>
+       
+        <br>
+      <p><input type="submit" name="submit" value="Send" class="send" />
+        <input type="reset" name="reset" value="Reset"class="reset"  />
+      </p>
+    </form>
+
+
+
+</body>
+</html>

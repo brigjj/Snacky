@@ -1,0 +1,121 @@
+<style type="text/css">
+	
+	*{
+		color:red;
+		
+	}
+
+	.button{
+		border-radius: 40px;
+		border: #FF5247 solid 2px;
+		position: absolute;
+		width: 12%;
+		height: 7%;
+		top:60%;
+		left:44%;
+		text-align: center;
+	}
+
+	
+
+	body{
+	animation-name : animationb;
+	animation-duration: 10s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+	animation-play-state: running;
+	}
+
+	@-webkit-keyframes animationb {
+    0%     {background-color:#FB99A6;}
+    50.0%  {background-color:#FEC6CD;} 
+    100.0%  {background-color:#FB99A6;}
+	}
+
+	@keyframes animationb {
+   	0%     {background-color:#FB99A6;}
+    50.0%  {background-color:#FEC6CD;} 
+    100.0%  {background-color:#FB99A6;}
+	}
+	
+
+	.home{
+			width:15%;
+			height:auto;
+			position: relative;
+			left:43%;
+		}
+
+
+	p { position: absolute;
+		width:65%;
+		left:18%;
+		top:35%;
+		text-align:center;
+		color:red;
+		font-size:1.3em;
+	}
+
+	@media (min-width: 1440px) { 
+		p{ 
+			font-size:1.5em;
+	}
+	}
+	
+	@media (min-width: 1920px) { 
+		p{ 
+			font-size:1.8em;
+	}
+	}
+
+	.direction{
+		position:relative;
+		top:30%;
+		text-decoration: none;
+		font-size: 20px;
+	}
+
+
+	
+
+</style>
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Snacky Location</title>
+</head>
+
+
+
+<body>
+ 
+ <a href="index.html"><img class="home" src="img/snackybuddha.png"></a>
+
+
+<p> 187 Grand St, Brooklyn, NY 11211 <br> <br>
+	 Mon, Tues, Weds, Thurs, Sun  6pm - 12 15am<br>
+	  Fri, Sat  6pm - 1 30am </p>
+
+
+<div class="button">
+	<a href="https://www.yelp.com/map/snacky-brooklyn" target="_blank" class="direction"> get directions </a>
+</div>
+
+
+</body>
+</html>
+
+
+
+
+
+
+
